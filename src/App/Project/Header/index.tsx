@@ -21,13 +21,14 @@ export default function Header() {
   return (
     <div className="flex flex-row font-jira items-center justify-between px-2">
       <div className="text-2xl font-bold text-[#172b4d]">Kanban board</div>
-      <a href=""></a>
-      <Button
-        icon={<Github />}
-        className="w-36 text-sm pl-[7px] text-[#42526e]"
-      >
-        Github Repo
-      </Button>
-    </div>
+      <a href="https://github.com/Ayyoub-ESSADEQ/TinyJira-frontend" target="_blank">
+        <Button
+          icon={<Github />}
+          className="w-36 text-sm pl-[7px] text-[#42526e]"
+        >
+          GitHub Repo
+        </Button>
+      </a>
+     </div>
   );
 }
