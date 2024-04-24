@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root,
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overscroll-behavior: none;
+}
+
+@layer utilities {
+  .font-CircularStdBlack {
+    font-family: CircularStdBlack, sans-serif;
+  }
+
+  .font-CircularStdBold {
+    font-family: CircularStdBold, sans-serif;
+  }
+
+  .font-CircularStdMedium {
+    font-family: CircularStdMedium, sans-serif;
+  }
+
+  .font-CircularStdBook {
+    font-family: CircularStdBook, sans-serif;
+  }
+
+  .font-jira {
+    font-family: jira, sans-serif;
+  }
+}
