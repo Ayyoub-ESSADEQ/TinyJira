@@ -22,18 +22,19 @@ export function convertToAppropriateFormat(data: RecievedData) {
       board.columns[result.column_id] = {
         id: result.column_id,
         title: result.board_column_title,
-        taskIds: [],
+        taskIds: [...new Set<string>()],
       };
     }
 
-    board.columns[result.column_id].taskIds.push(result.task_id);
-
+    const noDuplicateTasks = new Set(board.columns[result.column_id].taskIds);
+    noDuplicateTasks.add(result.task_id);
+    board.columns[result.column_id].taskIds = [...noDuplicateTasks];
     board.columnOrder[result.column_order] = result.column_id;
   });
 
   board.metaData = {
-    title: data?.[0]?.project_title ?? "Empty"
-  }
+    title: data?.[0]?.project_title ?? "Empty",
+  };
 
   return board;
 }

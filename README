@@ -1,46 +1,30 @@
-```javascript
-const results = [
-  {
-    column_order: 1,
-    task_title: "Think about it",
-    board_id: "75634f41-a7f3-4354-bb9a-c597b923e7c0",
-    user_lastname: "Essadeq",
-    user_id: "6a4116d6-68d9-48a6-b986-9aceb0896e85",
-    column_id: "5fc2defd-5b22-4d66-adc8-9a857bd8d32f",
-    task_id: "05002c4f-a78d-4b93-a6c2-ffb7b3e4a06a",
-    user_name: "Ayyoub",
-    task_description: "Do something",
-    board_column_title: "IN PROGRESS",
-  },
-  {
-    column_order: 0,
-    task_title: "Change the world",
-    board_id: "75634f41-a7f3-4354-bb9a-c597b923e7c0",
-    user_lastname: "Essadeq",
-    user_id: "6a4116d6-68d9-48a6-b986-9aceb0896e85",
-    column_id: "6b365c4a-2e80-4e67-a517-1d7f03dac464",
-    task_id: "e1b916fa-54e5-474b-9b52-ab0d1eed5041",
-    user_name: "Ayyoub",
-    task_description: "Do something",
-    board_column_title: "TODO",
-  },
-];
+![Home Page](image.png)
+</br>
+![Java](https://img.shields.io/badge/-Java-%23000000?logo=openjdk) ![Spring Boot](https://img.shields.io/badge/-Spring_Boot-%23a8ffad?logo=springboot) ![Maven](https://img.shields.io/badge/-Maven-%236D00CC?logo=apachemaven) ![Typescript](https://img.shields.io/badge/-Typescript-gray?logo=typescript) ![Javascript](https://img.shields.io/badge/-Javascript-gray?logo=javascript) ![Vite](https://img.shields.io/badge/-Vite-violet?logo=vite)
+![React](https://img.shields.io/badge/-React-blue?logo=react)
+![Tailwind](https://img.shields.io/badge/-Tailwind-cyan?logo=tailwindcss&labelColor=cyan) ![MIT License](https://img.shields.io/badge/license-MIT-blue)
 
-{
-  tasks: {
-    "task_id": {
-      id: "task_id",
-      content: "title_description",
-      assignees: [],
-    },
-  },
-  columns: {
-    "column_id": {
-      id: "column_id",
-      title: "column_title",
-      taskIds: [],
-    },
-  },
-  columnOrder: ["column_id"],
-};
-```
+## Description 📗
+
+TinyJira is a project management tool inspired by Jira, designed to facilitate project planning, task tracking, and team collaboration.
+
+## Features 🏆
+
+- Intuitive and scalable project structure for seamless navigation and management
+- Modern React implementation using functional components with hooks for enhanced development experience
+- API layer developed in Spring Boot and we opt for MySQL for the database.
+
+## Setting up development environment 🛠
+
+- Install [MySQL](https://www.mysql.com/).
+- Clone the TinyJira repository: `git clone https://github.com/Ayyoub-ESSADEQ/TinyJira.git`
+- Inside the `/api` directory, create an empty `.env` file and copy the contents of `/api/.env.example` into it. Fill in the required environment variables.
+- Install project dependencies for both the client (using `npm install`) and the api (using `mvn install
+`).
+- Run the application.
+- The TinyJira application should now be accessible at `http://localhost:5173/project/project_id`.
+
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
