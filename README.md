@@ -4,8 +4,7 @@
 ![Java](https://img.shields.io/badge/-Java-%23000000?logo=openjdk) ![Spring Boot](https://img.shields.io/badge/-Spring_Boot-%23a8ffad?logo=springboot) ![Maven](https://img.shields.io/badge/-Maven-%236D00CC?logo=apachemaven) ![Typescript](https://img.shields.io/badge/-Typescript-gray?logo=typescript) ![Javascript](https://img.shields.io/badge/-Javascript-gray?logo=javascript) ![Vite](https://img.shields.io/badge/-Vite-violet?logo=vite) ![React](https://img.shields.io/badge/-React-blue?logo=react) ![Tailwind](https://img.shields.io/badge/-Tailwind-cyan?logo=tailwindcss&labelColor=cyan) ![MIT License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description 📗
-
-TinyJira is a project management tool inspired by Jira, designed to facilitate project planning, task tracking, and team collaboration.
+👑 TinyJira is a project management 🗺 tool inspired by Jira, designed to facilitate project planning 💪, task tracking ✔, and team collaboration.
 
 ## Features 🏆
 
