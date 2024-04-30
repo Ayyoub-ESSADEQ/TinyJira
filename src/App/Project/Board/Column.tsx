@@ -7,6 +7,7 @@ import {
 import { Column as ColumnType, Task as TaskType } from "../../../types";
 import Task from "./Task";
 import { memo } from "react";
+import { DragIndicator } from "./DragIndicator";
 
 export interface ColumnProps {
   tasks: TaskType[];
@@ -21,7 +22,7 @@ const Container = (props: ContainerProps) => {
     <div
       {...props.provided.draggableProps}
       ref={props.provided.innerRef}
-      className="w-[285px] min-w-[285px] p-2 min-h-[400px]"
+      className={`${props.className} w-[285px] min-w-[285px] p-2 min-h-[400px]`}
     >
       {props.children}
     </div>
@@ -36,9 +37,13 @@ const Title = ({
   provided: DraggableProvided;
 }) => {
   return (
-    <h3 {...provided.dragHandleProps} className="select-none bg-[#f4f5f7] pt-[10px] pl-[13px] pr-[17px]">
-      {title}
-    </h3>
+    <div
+      {...provided.dragHandleProps}
+      className="select-none text-[#5e6c84] bg-[#f4f5f7] flex flex-row font-semibold items-center p-3 gap-2 rounded-t-[3px] uppercase text-xs"
+    >
+      <DragIndicator />
+      <span>{title}</span>
+    </div>
   );
 };
 
@@ -75,8 +80,8 @@ export default function Column(props: Readonly<ColumnProps>) {
           <Droppable type="task" droppableId={column.id}>
             {(provided, snapshot) => (
               <TaskList
-                className={`${
-                  snapshot.isDraggingOver ? "bg-pink-300" : ""
+                className={`rounded-b-[3px] ${
+                  snapshot.isDraggingOver ? "bg-[#e4e8f4b8]" : ""
                 }`}
                 provided={provided}
               >

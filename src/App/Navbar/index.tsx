@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Logo } from "./Icons/Logo";
 import { Plus } from "./Icons/Plus";
 
@@ -20,7 +21,9 @@ export default function Navbar() {
           <Logo size={28} />
         </div>
       </div>
-      <NavItem icon={<Plus />} label="create issue" />
+      <Link to={{ search: "modal-issue-create=true" }}>
+        <NavItem icon={<Plus />} label="create issue" />
+      </Link>
     </div>
   );
 }

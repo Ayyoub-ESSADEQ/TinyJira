@@ -6,10 +6,13 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   resolve: {
+    
     alias: {
-      types: path.resolve(__dirname, './src/types/types.ts'),
+      types: path.resolve(__dirname, './src/types'),
       App: path.resolve(__dirname, './src/App'),
       Components: path.resolve(__dirname, './src/Components'),
+      Constants: path.resolve(__dirname, './src/Constants'),
+      utils: path.resolve(__dirname, './src/utils'),
     },
   },
 });

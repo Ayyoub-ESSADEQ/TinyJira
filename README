@@ -1,0 +1,46 @@
+```javascript
+const results = [
+  {
+    column_order: 1,
+    task_title: "Think about it",
+    board_id: "75634f41-a7f3-4354-bb9a-c597b923e7c0",
+    user_lastname: "Essadeq",
+    user_id: "6a4116d6-68d9-48a6-b986-9aceb0896e85",
+    column_id: "5fc2defd-5b22-4d66-adc8-9a857bd8d32f",
+    task_id: "05002c4f-a78d-4b93-a6c2-ffb7b3e4a06a",
+    user_name: "Ayyoub",
+    task_description: "Do something",
+    board_column_title: "IN PROGRESS",
+  },
+  {
+    column_order: 0,
+    task_title: "Change the world",
+    board_id: "75634f41-a7f3-4354-bb9a-c597b923e7c0",
+    user_lastname: "Essadeq",
+    user_id: "6a4116d6-68d9-48a6-b986-9aceb0896e85",
+    column_id: "6b365c4a-2e80-4e67-a517-1d7f03dac464",
+    task_id: "e1b916fa-54e5-474b-9b52-ab0d1eed5041",
+    user_name: "Ayyoub",
+    task_description: "Do something",
+    board_column_title: "TODO",
+  },
+];
+
+{
+  tasks: {
+    "task_id": {
+      id: "task_id",
+      content: "title_description",
+      assignees: [],
+    },
+  },
+  columns: {
+    "column_id": {
+      id: "column_id",
+      title: "column_title",
+      taskIds: [],
+    },
+  },
+  columnOrder: ["column_id"],
+};
+```

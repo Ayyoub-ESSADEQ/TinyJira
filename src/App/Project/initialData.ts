@@ -1,22 +1,50 @@
-import { Data } from "../../types";
+import { Data } from "types";
 
 const initialData: Data = {
   tasks: {
     "task-1": {
       id: "task-1",
       content: "Hello world 1",
+      assignees: [
+        {
+          name: "Ayyoub",
+          avatar: "",
+        },
+      ],
     },
     "task-2": {
       id: "task-2",
       content: "Hello world 2",
+      assignees: [
+        {
+          name: "Ayyoub",
+          avatar: "",
+        },
+      ],
     },
     "task-3": {
       id: "task-3",
       content: "Hello world 3",
+      assignees: [
+        {
+          name: "Ayyoub",
+          avatar: "",
+        },
+        {
+          name: "Ayyoub",
+          avatar: "",
+        },
+      ],
     },
     "task-4": {
       id: "task-4",
       content: "Hello world 4",
+      assignees: [
+        {
+          name: "Ayyoub",
+          avatar:""
+        },
+      ],
     },
   },
   columns: {
